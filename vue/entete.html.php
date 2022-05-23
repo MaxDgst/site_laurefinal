@@ -20,14 +20,14 @@
             <li class="navbar__link second"><a href="#">Avis Familles</a></li>
             <li class="navbar__link third"><a href="#">Contact</a></li>
             <li class="navbar__link four"><a href="#">Mes articles et podcasts</a></li>
-            <li class="navbar__link fifth"><a href="#">Partenaires</a></li>
+            <li class="navbar__link fifth"><a href="./?action=partenaires">Partenaires</a></li>
             <li class="navbar__link fifth"><a href="#">Se connecter</a></li>
           </ul>
         <button class="burger">
           <span class="bar"></span>  
         </button>   
         </nav>
-  </section>
+
 <!-- partial -->
   <script  src="js/script.js"></script>
 
