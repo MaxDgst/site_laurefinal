@@ -1,3 +1,5 @@
+/*Entete*/
+
 * {
   margin: 0;
   padding: 0;
@@ -179,3 +181,22 @@
     display:none;
   }
 }
+
+/* Fin Entete */
+
+
+
+
+/*Corps*/
+.corps h1 {
+  color: #6C3483;
+  font-size: 2rem;
+}
+/*Fin Corps*/
+
+
+
+
+/*Accueil*/
+
+/*Fin accueil*/

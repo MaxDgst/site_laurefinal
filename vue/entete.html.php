@@ -8,12 +8,13 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../css/style.css">
-</head>
+  <style type="text/css">
+    @import url("css/style.css");
+  </style>
 <body>
   <section id="sectionMenu">
       <nav class="navbar dark-mode" role="navigation">
-        <div class="navbar__logo"><img src="../image/logotest.png" height="200px"><h1>Laure Daussy <br> coach parental</h1></div>   
+        <div class="navbar__logo"><img src="image/logotest.png" height="200px"><h1>Laure Daussy <br> coach parental</h1></div>   
           <ul class="navbar__links">
             <li class="navbar__link first"><a href="#">Prestations</a></li>
             <li class="navbar__link second"><a href="#">Avis Familles</a></li>
@@ -28,7 +29,6 @@
         </nav>
   </section>
 <!-- partial -->
-  <script  src="../js/script.js"></script>
+  <script  src="js/script.js"></script>
 
-</body>
-</html>
+  <div id="corps">
