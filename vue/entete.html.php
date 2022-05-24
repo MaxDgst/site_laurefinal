@@ -14,14 +14,14 @@
 <body>
   <section id="sectionMenu">
       <nav class="navbar dark-mode" role="navigation">
-        <div class="navbar__logo"><img src="image/logotest.png" height="200px"><h1>Laure Daussy <br> coach parental</h1></div>   
+        <div class="navbar__logo"><a href="./?action=accueilDefaut"><img src="image/logotest.png" height="200px"></a><h1>Laure Daussy <br> coach parental</h1></div>   
           <ul class="navbar__links">
             <li class="navbar__link first"><a href="#">Prestations</a></li>
             <li class="navbar__link second"><a href="#">Avis Familles</a></li>
             <li class="navbar__link third"><a href="#">Contact</a></li>
             <li class="navbar__link four"><a href="#">Mes articles et podcasts</a></li>
             <li class="navbar__link fifth"><a href="./?action=partenaires">Partenaires</a></li>
-            <li class="navbar__link fifth"><a href="#">Se connecter</a></li>
+            <li class="navbar__link fifth"><a href="./?action=connexion">Se connecter</a></li>
           </ul>
         <button class="burger">
           <span class="bar"></span>  
@@ -31,4 +31,4 @@
 <!-- partial -->
   <script  src="js/script.js"></script>
 
-  <div id="corps">
+  <div class="corps">

@@ -94,7 +94,7 @@
   }
   .navbar__link > a:hover {
     padding-left:2rem;
-    letter-spacing:2px;
+    letter-spacing:1px;
   }
   
   /* Toggle menu */
@@ -188,11 +188,64 @@
 
 
 /*Corps*/
+.corps {
+  max-width: 1500px;
+  margin: 0 auto;
+}
 .corps h1 {
-  color: #6C3483;
-  font-size: 2rem;
+  display:flex; 
+  font-size:1.7rem;
+  font-weight: 800;
+  color:#CD9900;
 }
 /*Fin Corps*/
+
+/*Connexion*/
+.formulaire {
+  border: 1px solid #CD9900;
+  border-radius: 3px;
+  padding:10px;
+}
+
+.formulaire input[type="text"]{
+  padding: 5px;
+  margin: 10px;
+  height: 40px;
+  width: 350px;
+  font-size: 1.3rem;
+}
+
+.formulaire input[type="password"]{
+  padding: 5px;
+  margin: 10px;
+  height: 40px;
+  width: 350px;
+  font-size: 1.3rem;
+}
+
+.formulaire input[type="submit"]{
+  padding: 5px;
+  margin: 10px;
+  font-size: 1.2rem;
+  background-color: transparent;
+}
+
+.formulaire h2{
+  font-size: 1.1rem;
+  color: #CD9900;
+}
+
+.formulaire a{
+  color:#6C3483;
+  text-decoration: underline;
+}
+
+@media screen and (max-width:1500px) {
+  .formulaire{
+    margin-left:30px;
+    margin-right:30px;
+  }
+}
 
 
 

@@ -5,6 +5,9 @@ function controleurPrincipal($action) {
     $lesActions["accueilDefaut"] = "accueilPresentation.php";
     $lesActions["accueil"] = "accueilPresentation.php";
     $lesActions["partenaires"] = "partenaires.php";
+    $lesActions["connexion"] = "connexion.php";
+    $lesActions["inscription"] = "inscription.php";
+
 
     
 
