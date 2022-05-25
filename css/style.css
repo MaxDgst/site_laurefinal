@@ -58,7 +58,7 @@
 }
 
 /*  Small device */
-@media screen and (max-width:1078.98px) {
+@media screen and (max-width:1595.98px) {
   .navbar__links { 
     overflow:hidden;
     display:flex;
@@ -192,12 +192,6 @@
   max-width: 1500px;
   margin: 0 auto;
 }
-.corps h1 {
-  display:flex; 
-  font-size:1.7rem;
-  font-weight: 800;
-  color:#CD9900;
-}
 /*Fin Corps*/
 
 /*Connexion*/
@@ -205,6 +199,13 @@
   border: 1px solid #CD9900;
   border-radius: 3px;
   padding:10px;
+}
+
+.formulaire h1 {
+  display:flex; 
+  font-size:1.7rem;
+  font-weight: 800;
+  color:#CD9900;
 }
 
 .formulaire input[type="text"]{
@@ -251,5 +252,34 @@
 
 
 /*Accueil*/
+.titre1 h1{
+  display:flex; 
+  font-size:2.5rem;
+  font-weight: 800;
+  color:#CD9900;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto;
+}
 
+.photo1{
+  margin-top: 10px;
+}
+
+.photo1 img{
+  display: flex;
+  margin: 0 auto;
+  border: 1px solid #6C3483;
+  border-radius: 3px;
+  text-align: center;
+  justify-content: center;
+}
+
+@media screen and (max-width:1500px) {
+  .paragrahe1{
+    margin-left:30px;
+    margin-right:30px;
+  }
+}
 /*Fin accueil*/
