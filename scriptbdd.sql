@@ -99,11 +99,11 @@ Un moment de lâcher prise pour pouvoir récupérer des heures de sommeil en tou
 sérénité.
 Les horaires sont modifiables en fonction de vos besoins.");
 
-INSERT INTO article VALUES (1, "laMotricite.pdf", NULL);
-INSERT INTO article VALUES (2, NULL , "https://blog.berceaumagique.com/livres-jeunes-enfants/%22");
+INSERT INTO Article VALUES (1, "laMotricite.pdf", NULL);
+INSERT INTO Article VALUES (2, NULL , "https://blog.berceaumagique.com/livres-jeunes-enfants/%22");
 
-INSERT INTO partenaires VALUES (1, "Nature Safe", "Nature Safe marque de cosmétiques bio fabriqué à Lyon n’hésitez pas à aller voir son site.", "https://www.naturesafe-shop.com");
-INSERT INTO partenaires VALUES (2, "Pereski", "Les coffrets Pereski des cartes rigides qui convient au bébé dès la naissance.
+INSERT INTO Partenaires VALUES (1, "Nature Safe", "Nature Safe marque de cosmétiques bio fabriqué à Lyon n’hésitez pas à aller voir son site.", "https://www.naturesafe-shop.com");
+INSERT INTO Partenaires VALUES (2, "Pereski", "Les coffrets Pereski des cartes rigides qui convient au bébé dès la naissance.
 
 Un coté noir et un coté blanc pour jouer sur les contrastes et attirer la curiosité du tout petit comme pour les plus grand.
 
@@ -113,10 +113,10 @@ Mon outil favori pendant les ateliers massage bébé.
 
 Grâce au code LAUREEJE15 bénéficié de 15% de réduction sur votre première commande.", "https://pereski.co");
 
-INSERT INTO partenaires VALUES (3, "We Partum", "Je suis inscrite sur la plate forme We Partum qui accompagne des jeunes et futurs parents dans leurs vie perso et pro.", "https://www.wepartum.fr");
-INSERT INTO partenaires VALUES (4, "Gazouyi", "Application Gazouyi vous propose des activités pour vous amuser avec votre enfant en l’aidant à grandir.", "https://www.gazouyi.com");
+INSERT INTO Partenaires VALUES (3, "We Partum", "Je suis inscrite sur la plate forme We Partum qui accompagne des jeunes et futurs parents dans leurs vie perso et pro.", "https://www.wepartum.fr");
+INSERT INTO Partenaires VALUES (4, "Gazouyi", "Application Gazouyi vous propose des activités pour vous amuser avec votre enfant en l’aidant à grandir.", "https://www.gazouyi.com");
 
-INSERT INTO `photop` (`idPP`, `cheminPP`, `idPartenaire`) VALUES
+INSERT INTO `PhotoP` (`idPP`, `cheminPP`, `idPartenaire`) VALUES
 (1, 'naturesafe.png', 1),
 (2, 'pereski1.png', 2),
 (3, 'pereski2.jpg', 2),
