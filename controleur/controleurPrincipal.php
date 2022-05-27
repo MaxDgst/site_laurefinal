@@ -4,10 +4,12 @@ function controleurPrincipal($action) {
     $lesActions = array();
     $lesActions["accueilDefaut"] = "accueilPresentation.php";
     $lesActions["accueil"] = "accueilPresentation.php";
+    $lesActions["accueil2"] = "accueilParcours.php";
     $lesActions["partenaires"] = "partenaires.php";
     $lesActions["connexion"] = "connexion.php";
     $lesActions["inscription"] = "inscription.php";
     $lesActions["listeP"] = "listePartenaires.php";
+    $lesActions["contact"] = "contact.php";
 
 
 
