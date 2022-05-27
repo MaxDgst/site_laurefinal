@@ -7,6 +7,8 @@ function controleurPrincipal($action) {
     $lesActions["partenaires"] = "partenaires.php";
     $lesActions["connexion"] = "connexion.php";
     $lesActions["inscription"] = "inscription.php";
+    $lesActions["listeP"] = "listePartenaires.php";
+
 
 
     

@@ -115,3 +115,10 @@ Grâce au code LAUREEJE15 bénéficié de 15% de réduction sur votre première 
 
 INSERT INTO partenaires VALUES (3, "We Partum", "Je suis inscrite sur la plate forme We Partum qui accompagne des jeunes et futurs parents dans leurs vie perso et pro.", "https://www.wepartum.fr");
 INSERT INTO partenaires VALUES (4, "Gazouyi", "Application Gazouyi vous propose des activités pour vous amuser avec votre enfant en l’aidant à grandir.", "https://www.gazouyi.com");
+
+INSERT INTO `photop` (`idPP`, `cheminPP`, `idPartenaire`) VALUES
+(1, 'naturesafe.png', 1),
+(2, 'pereski1.png', 2),
+(3, 'pereski2.jpg', 2),
+(4, 'gazouyi.png', 4),
+(5, 'wepartum.jpg', 3);

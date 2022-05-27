@@ -27,16 +27,6 @@ if (isset($_POST["mailU"]) && isset($_POST["mdpU"]) && isset($_POST["pseudoU"]))
  else {
     $msg="Renseigner tous les champs...";    
     }
-
-    $mailU = $_POST["mailU"];
-    $stmt = $pdo->prepare("SELECT * FROM utilisateur WHERE email=$mailU");
-    $stmt->execute([$mailU]); 
-    $utilisateur = $stmt->fetch();
-    if ($utilisateur) {
-        echo "adresse mail déjà utilisée";
-    } else {
-        $ret;
-    } 
 }
 
 if ($inscrit) {

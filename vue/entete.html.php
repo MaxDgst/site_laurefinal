@@ -20,7 +20,7 @@
             <li class="navbar__link second"><a href="#">Avis Familles</a></li>
             <li class="navbar__link third"><a href="#">Contact</a></li>
             <li class="navbar__link four"><a href="#">Mes articles et podcasts</a></li>
-            <li class="navbar__link fifth"><a href="./?action=partenaires">Partenaires</a></li>
+            <li class="navbar__link fifth"><a href="./?action=listeP">Partenaires</a></li>
             <li class="navbar__link fifth"><a href="./?action=connexion">Se connecter</a></li>
           </ul>
         <button class="burger">
