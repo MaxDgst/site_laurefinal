@@ -10,6 +10,8 @@ function controleurPrincipal($action) {
     $lesActions["inscription"] = "inscription.php";
     $lesActions["listeP"] = "listePartenaires.php";
     $lesActions["contact"] = "contact.php";
+    $lesActions["profil"] = "monProfil.php";
+    $lesActions["profil"] = "avisFamille.php";
 
 
 

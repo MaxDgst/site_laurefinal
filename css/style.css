@@ -163,7 +163,7 @@
 }
 
 /*  Medium device - Bonus */
-@media screen and (min-width:768px) {
+@media screen and (min-width:1594px) {
   .navbar__link > a::after {
     display:block;
     content:"";
@@ -232,6 +232,22 @@
   font-size: 1.3rem;
 }
 
+.formulaire input[type="email"]{
+  padding: 5px;
+  margin: 10px;
+  height: 40px;
+  width: 350px;
+  font-size: 1.3rem;
+}
+
+.formulaire textarea{
+  padding: 5px;
+  margin: 10px;
+  height: 40px;
+  width: 350px;
+  font-size: 1.3rem;
+}
+
 .formulaire input[type="submit"]{
   padding: 5px;
   margin: 10px;
@@ -245,6 +261,42 @@
 }
 
 .formulaire a{
+  color:#6C3483;
+  text-decoration: underline;
+}
+
+.confirmation {
+  border: 1px solid #CD9900;
+  border-radius: 3px;
+  padding:10px;
+}
+
+.confirmation h1 {
+  display:flex; 
+  font-size:1.7rem;
+  font-weight: 800;
+  color:#CD9900;
+}
+
+.confirmation a{
+  color:#6C3483;
+  text-decoration: underline;
+}
+
+.profil {
+  border: 1px solid #CD9900;
+  border-radius: 3px;
+  padding:10px;
+}
+
+.profil h1 {
+  display:flex; 
+  font-size:1.7rem;
+  font-weight: 800;
+  color:#CD9900;
+}
+
+.profil a{
   color:#6C3483;
   text-decoration: underline;
 }
