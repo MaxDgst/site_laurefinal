@@ -1,8 +1,8 @@
 CREATE TABLE Utilisateur(
+   pseudoU VARCHAR(40),
    mailU VARCHAR(80),
    mdpU VARCHAR(40),
-   pseudoU VARCHAR(40),
-   PRIMARY KEY(mailU)
+   PRIMARY KEY(pseudoU)
 );
 
 CREATE TABLE Prestations(
@@ -10,7 +10,7 @@ CREATE TABLE Prestations(
    nomPrestation VARCHAR(150),
    prixPrestation VARCHAR(15),
    dureePrestation VARCHAR(50),
-   descPrestation VARCHAR(400),
+   descPrestation VARCHAR(800),
    PRIMARY KEY(idPrestation)
 );
 
@@ -41,7 +41,7 @@ CREATE TABLE PhotoP(
 CREATE TABLE Article(
    idArticle INT,
    cheminArticle VARCHAR(60),
-   lienArticle VARCHAR(60),   
+   lienArticle VARCHAR(60),
    PRIMARY KEY(idArticle)
 );
 
@@ -52,14 +52,16 @@ CREATE TABLE Podcast(
 );
 
 CREATE TABLE Critiques(
+   idAvis INT,
    note INT,
-   avis VARCHAR(600),
+   avis VARCHAR(800),
    idPrestation INT NOT NULL,
-   mailU VARCHAR(80) NOT NULL,
-   PRIMARY KEY(note),
+   pseudoU VARCHAR(40) NOT NULL,
+   PRIMARY KEY(idAvis),
    FOREIGN KEY(idPrestation) REFERENCES Prestations(idPrestation),
-   FOREIGN KEY(mailU) REFERENCES Utilisateur(mailU)
+   FOREIGN KEY(pseudoU) REFERENCES Utilisateur(pseudoU)
 );
+
 
 
 INSERT INTO Prestations Values(1,"Atelier massage bébé à domicile","60E","1h30","Je viens avec un poupon pour vous guider sur le massage. C'est vous qui massez votre bébé. Un moment de détente, de lien entre le parent et le bébé.
@@ -122,3 +124,15 @@ INSERT INTO `PhotoP` (`idPP`, `cheminPP`, `idPartenaire`) VALUES
 (3, 'pereski2.jpg', 2),
 (4, 'gazouyi.png', 4),
 (5, 'wepartum.jpg', 3);
+
+INSERT INTO utilisateur VALUES("makkssou", "maxime.dgstpro@gmail.com", "yessaye");
+
+INSERT INTO critiques VALUES (1, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (2, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (3, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (4, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (5, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (6, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (7, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (8, 8, "super", 3, "makkssou");
+INSERT INTO critiques VALUES (9, 8, "super", 3, "makkssou");

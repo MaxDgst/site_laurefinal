@@ -11,7 +11,7 @@ function controleurPrincipal($action) {
     $lesActions["listeP"] = "listePartenaires.php";
     $lesActions["contact"] = "contact.php";
     $lesActions["profil"] = "monProfil.php";
-    $lesActions["profil"] = "avisFamille.php";
+    $lesActions["avis"] = "avisFamille.php";
 
 
 

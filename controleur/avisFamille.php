@@ -15,7 +15,7 @@ $listeAvis = getAvis();
 // appel du script de vue qui permet de gerer l'affichage des donnees
 $titre = "Liste des partenaires répertoriés";
 include "$racine/vue/entete.html.php";
-include "$racine/vue/vueListeAvis.php";
+include "$racine/vue/vueListeAvis.html.php";
 include "$racine/vue/pied.html.php";
 
 

@@ -17,7 +17,7 @@
         <div class="navbar__logo"><a href="./?action=accueilDefaut"><img src="image/logotest.png" height="200px"></a><h1>Laure Daussy <br> coach parental</h1></div>   
           <ul class="navbar__links">
             <li class="navbar__link first"><a href="#">Prestations</a></li>
-            <li class="navbar__link second"><a href="#">Avis Familles</a></li>
+            <li class="navbar__link second"><a href="./?action=avis">Avis Familles</a></li>
             <li class="navbar__link third"><a href="./?action=contact">Contact</a></li>
             <li class="navbar__link four"><a href="#">Mes articles et podcasts</a></li>
             <li class="navbar__link fifth"><a href="./?action=listeP">Partenaires</a></li>

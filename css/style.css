@@ -424,3 +424,42 @@
   margin-left:10px;
 }
 /*Fin Partenaires*/
+
+/*Avis*/
+
+.bandeauAvis {
+  display: flex;
+  margin-top: 30px;
+  border: 2px solid #6C3483;
+  border-radius: 3px;
+
+}
+
+.note{
+  display:flex;
+  font-size:1.5rem;
+  font-weight: 800;
+  border-right: 2px solid #6C3483;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+}
+
+.pseudoAvis {
+  display:flex;
+  align-items: top;
+  justify-content: center;
+  font-size:1.5rem;
+  font-weight: 800;
+  color:#CD9900;
+  padding:10px;
+}
+
+.commentaireAvis{
+  display:flex;
+  font-size: 1.3rem;
+  justify-content: center;
+  text-align: center;
+}
+
+/*Fin Avis*/
