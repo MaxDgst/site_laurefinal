@@ -18,6 +18,7 @@
 }
 
 :root {
+  --font-family: 'Fira Sans', sans-serif;
   --font-size:1rem;
 }
 
@@ -92,6 +93,7 @@
     font-size:1.6rem;
     color:var(--navbar-color);  
     transition: all .4s ease-in-out;
+    background-color:white;
   }
   .navbar__link > a:hover {
     padding-left:2rem;
@@ -240,11 +242,19 @@
   font-size: 1.3rem;
 }
 
-.formulaire textarea{
+.formulaire input[type="number"]{
   padding: 5px;
   margin: 10px;
   height: 40px;
   width: 350px;
+  font-size: 1.3rem;
+}
+
+.formulaire textarea{
+  padding: 5px;
+  margin: 10px;
+  height: 300px;
+  width: 500px;
   font-size: 1.3rem;
 }
 
@@ -253,6 +263,55 @@
   margin: 10px;
   font-size: 1.2rem;
   background-color: transparent;
+}
+
+@media screen and (max-width:768.98px) {
+  .formulaire input[type="text"]{
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  
+  .formulaire input[type="password"]{
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  
+  .formulaire input[type="email"]{
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  
+  .formulaire input[type="number"]{
+    padding: 5px;
+    margin: 10px;
+    height: 40px;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  
+  .formulaire textarea{
+    padding: 5px;
+    margin: 10px;
+    height: 200px;
+    width: 300px;
+    font-size: 0.9rem;
+  }
+  
+  .formulaire input[type="submit"]{
+    padding: 5px;
+    margin: 10px;
+    font-size: 1.2rem;
+    background-color: transparent;
+  }
 }
 
 .formulaire h2{
@@ -265,20 +324,21 @@
   text-decoration: underline;
 }
 
-.confirmation {
+.conf {
+  display: flex;
   border: 1px solid #CD9900;
   border-radius: 3px;
   padding:10px;
 }
 
-.confirmation h1 {
+.conf h1 {
   display:flex; 
   font-size:1.7rem;
   font-weight: 800;
   color:#CD9900;
 }
 
-.confirmation a{
+.conf a{
   color:#6C3483;
   text-decoration: underline;
 }
@@ -300,6 +360,7 @@
   color:#6C3483;
   text-decoration: underline;
 }
+
 /*Fin Connexion*/
 
 
@@ -460,6 +521,40 @@
   font-size: 1.3rem;
   justify-content: center;
   text-align: center;
+}
+
+.ajoutAvis {
+  display: flex;
+  margin: 20px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ajoutAvis button {
+  font-size: 1.4rem;
+  background-color: transparent;
+  width: 300px;
+  height: 50px;
+  padding: 5px;
+  border-color: #6C3483;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.ajoutAvis a {
+  color:#6C3483;
+}
+
+.goCon{
+  display:flex;
+  align-items: top;
+  justify-content: center;
+  font-size:1.3rem;
+  font-weight: 800;
+  color:#CD9900;
+  padding:10px;
 }
 
 /*Fin Avis*/

@@ -17,8 +17,9 @@ else
 {
     $mailU=$_POST["mailU"];
     $mdpU=$_POST["mdpU"];
+    $pseudoU= getPseudoUByMailU($mailU);
     
-    login($mailU,$mdpU);
+    login($mailU,$mdpU,$pseudoU);
 
     if (isLoggedOn()){ // si l'utilisateur est connecté on redirige vers le controleur monProfil
         include "$racine/controleur/monProfil.php";

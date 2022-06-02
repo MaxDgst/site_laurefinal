@@ -10,7 +10,7 @@ CREATE TABLE Prestations(
    nomPrestation VARCHAR(150),
    prixPrestation VARCHAR(15),
    dureePrestation VARCHAR(50),
-   descPrestation VARCHAR(800),
+   descPrestation VARCHAR(600),
    PRIMARY KEY(idPrestation)
 );
 
@@ -52,15 +52,15 @@ CREATE TABLE Podcast(
 );
 
 CREATE TABLE Critiques(
-   idAvis INT,
+   idAvis INT AUTO_INCREMENT,
    note INT,
-   avis VARCHAR(800),
-   idPrestation INT NOT NULL,
+   avis VARCHAR(600),
    pseudoU VARCHAR(40) NOT NULL,
    PRIMARY KEY(idAvis),
-   FOREIGN KEY(idPrestation) REFERENCES Prestations(idPrestation),
    FOREIGN KEY(pseudoU) REFERENCES Utilisateur(pseudoU)
 );
+
+
 
 
 
@@ -125,14 +125,14 @@ INSERT INTO `PhotoP` (`idPP`, `cheminPP`, `idPartenaire`) VALUES
 (4, 'gazouyi.png', 4),
 (5, 'wepartum.jpg', 3);
 
-INSERT INTO utilisateur VALUES("makkssou", "maxime.dgstpro@gmail.com", "yessaye");
+INSERT INTO Utilisateur VALUES("makkssou", "maxime.dgstpro@gmail.com", "yessaye");
 
-INSERT INTO critiques VALUES (1, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (2, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (3, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (4, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (5, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (6, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (7, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (8, 8, "super", 3, "makkssou");
-INSERT INTO critiques VALUES (9, 8, "super", 3, "makkssou");
+INSERT INTO Critiques VALUES (1, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (2, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (3, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (4, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (5, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (6, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (7, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (8, 8, "super", "makkssou");
+INSERT INTO Critiques VALUES (9, 8, "super", "makkssou");

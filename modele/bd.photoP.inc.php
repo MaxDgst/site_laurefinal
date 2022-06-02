@@ -7,7 +7,7 @@ function getPhotosByIdPartenaire($idPartenaire) {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from photop where idPartenaire=:idPartenaire");
+        $req = $cnx->prepare("select * from PhotoP where idPartenaire=:idPartenaire");
         $req->bindValue(':idPartenaire', $idPartenaire, PDO::PARAM_INT);
 
         $req->execute();
@@ -29,7 +29,7 @@ function getPhotosByIdPP($idPP) {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from photop where idPP=:idPP");
+        $req = $cnx->prepare("select * from PhotoP where idPP=:idPP");
         $req->bindValue(':idPP', $idPP, PDO::PARAM_INT);
         $req->execute();
 
@@ -46,7 +46,7 @@ function addPhoto($idPP, $cheminPP, $idPartenaire) {
     try {
         $cnx = connexionPDO();
 
-        $req = $cnx->prepare("insert into photop (idPP, cheminPP, idPartenaire) values(:idPP,:cheminPP,:idPartenaire)");
+        $req = $cnx->prepare("insert into PhotoP (idPP, cheminPP, idPartenaire) values(:idPP,:cheminPP,:idPartenaire)");
         $req->bindValue(':idPP', $idPP, PDO::PARAM_INT);
         $req->bindValue(':cheminPP', $cheminPP, PDO::PARAM_STR);
         $req->bindValue(':idPartenaire', $idPartenaire, PDO::PARAM_INT);

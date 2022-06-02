@@ -21,7 +21,13 @@
             <li class="navbar__link third"><a href="./?action=contact">Contact</a></li>
             <li class="navbar__link four"><a href="#">Mes articles et podcasts</a></li>
             <li class="navbar__link fifth"><a href="./?action=listeP">Partenaires</a></li>
+            <?php include_once "$racine/modele/authentification.inc.php"; ?>
+            <?php if(isLoggedOn()){ ?>
+              <li class="navbar__link fifth"><a href="./?action=profil">Mon Profil</a></li>
+            <?php } 
+                else{ ?>
             <li class="navbar__link fifth"><a href="./?action=connexion">Se connecter</a></li>
+            <?php } ?>
           </ul>
         <button class="burger">
           <span class="bar"></span>  

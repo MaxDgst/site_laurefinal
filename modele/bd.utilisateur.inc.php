@@ -7,7 +7,7 @@ function getUtilisateurs() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from utilisateur");
+        $req = $cnx->prepare("select * from Utilisateur");
         $req->execute();
 
         $resultat = $req->fetchAll(PDO::FETCH_ASSOC);
@@ -23,7 +23,24 @@ function getUtilisateurByMailU($mailU) {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from utilisateur where mailU=:mailU");
+        $req = $cnx->prepare("select * from Utilisateur where mailU=:mailU");
+        $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
+        $req->execute();
+        
+        $resultat = $req->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        print "Erreur !: " . $e->getMessage();
+        die();
+    }
+    return $resultat;
+}
+
+function getPseudoUByMailU($mailU) {
+    $resultat = array();
+
+    try {
+        $cnx = connexionPDO();
+        $req = $cnx->prepare("select pseudoU from Utilisateur where mailU=:mailU");
         $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
         $req->execute();
         
@@ -40,7 +57,7 @@ function addUtilisateur($mailU, $mdpU, $pseudoU) {
         $cnx = connexionPDO();
 
         $mdpUCrypt = crypt($mdpU, "sel");
-        $req = $cnx->prepare("insert into utilisateur (mailU, mdpU, pseudoU) values(:mailU,:mdpU,:pseudoU)");
+        $req = $cnx->prepare("insert into Utilisateur (mailU, mdpU, pseudoU) values(:mailU,:mdpU,:pseudoU)");
         $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
         $req->bindValue(':mdpU', $mdpUCrypt, PDO::PARAM_STR);
         $req->bindValue(':pseudoU', $pseudoU, PDO::PARAM_STR);
@@ -59,7 +76,7 @@ function updtMdpUtilisateur($mailU, $mdpU) {
         $cnx = connexionPDO();
 
         $mdpUCrypt = crypt($mdpU, "sel");
-        $req = $cnx->prepare("update utilisateur set mdpU=:mdpU where mailU=:mailU");
+        $req = $cnx->prepare("update Utilisateur set mdpU=:mdpU where mailU=:mailU");
         $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
         $req->bindValue(':mdpU', $mdpUCrypt, PDO::PARAM_STR);
 
@@ -76,7 +93,7 @@ function updtPseudoUtilisateur($mailU, $pseudoU) {
     try {
         $cnx = connexionPDO();
 
-        $req = $cnx->prepare("update utilisateur set pseudoU=:pseudoU where mailU=:mailU");
+        $req = $cnx->prepare("update Utilisateur set pseudoU=:pseudoU where mailU=:mailU");
         $req->bindValue(':mailU', $mailU, PDO::PARAM_STR);
         $req->bindValue(':pseudoU', $pseudoU, PDO::PARAM_STR);
 

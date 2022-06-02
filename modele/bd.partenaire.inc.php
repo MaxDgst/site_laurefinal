@@ -7,7 +7,7 @@ function getPartenaires() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from partenaires");
+        $req = $cnx->prepare("select * from Partenaires");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
