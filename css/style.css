@@ -265,6 +265,10 @@
   background-color: transparent;
 }
 
+.formulaire span{
+  color:red;
+}
+
 @media screen and (max-width:768.98px) {
   .formulaire input[type="text"]{
     padding: 5px;
@@ -361,6 +365,7 @@
   text-decoration: underline;
 }
 
+
 /*Fin Connexion*/
 
 
@@ -377,7 +382,7 @@
   align-items: center;
   text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin-bottom:30px;
 }
 
 .photo1{
@@ -558,3 +563,25 @@
 }
 
 /*Fin Avis*/
+
+/*Article et podcasts*/
+.pdf embed {
+  display: flex;
+  width: 800px;
+  height: 900px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  border: 3px solid #6C3483;
+  border-radius: 3px;
+}
+
+@media screen and (max-width:768.98px) {
+  .pdf embed {
+    width:400px;
+    height:450px;
+  }
+}
+
+
+/*Fin article et podcasts*/

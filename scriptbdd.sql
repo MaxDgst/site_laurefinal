@@ -136,3 +136,5 @@ INSERT INTO Critiques VALUES (6, 8, "super", "makkssou");
 INSERT INTO Critiques VALUES (7, 8, "super", "makkssou");
 INSERT INTO Critiques VALUES (8, 8, "super", "makkssou");
 INSERT INTO Critiques VALUES (9, 8, "super", "makkssou");
+
+INSERT INTO Podcast VALUES (1, "https://www.youtube.com/");

@@ -23,7 +23,14 @@ for ($i = 0; $i < count($listePartenaires); $i++) {
                 <?php echo $listePartenaires[$i]['descPartenaire']; ?>
             </div>
             <div class="lienP">
+                <?php {  ?>
+                    <a href="<?=$listePartenaires[$i]['lienPartenaire'] ?>">
+                <?php } ?>
+            <div class="lienP">
                 <?php echo $listePartenaires[$i]['lienPartenaire']; ?>
+                </a>
+ 
+            </div>
             </div>     
         </div>
     </div>

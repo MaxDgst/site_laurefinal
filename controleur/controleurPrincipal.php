@@ -9,6 +9,7 @@ function controleurPrincipal($action) {
     $lesActions["connexion"] = "connexion.php";
     $lesActions["inscription"] = "inscription.php";
     $lesActions["listeP"] = "listePartenaires.php";
+    $lesActions["articlePodcast"] = "listeArticlePodcast.php";
     $lesActions["contact"] = "contact.php";
     $lesActions["profil"] = "monProfil.php";
     $lesActions["avis"] = "avisFamille.php";

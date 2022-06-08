@@ -19,7 +19,7 @@
             <li class="navbar__link first"><a href="#">Prestations</a></li>
             <li class="navbar__link second"><a href="./?action=avis">Avis Familles</a></li>
             <li class="navbar__link third"><a href="./?action=contact">Contact</a></li>
-            <li class="navbar__link four"><a href="#">Mes articles et podcasts</a></li>
+            <li class="navbar__link four"><a href="./?action=articlePodcast">Mes articles et podcasts</a></li>
             <li class="navbar__link fifth"><a href="./?action=listeP">Partenaires</a></li>
             <?php include_once "$racine/modele/authentification.inc.php"; ?>
             <?php if(isLoggedOn()){ ?>

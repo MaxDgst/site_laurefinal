@@ -4,13 +4,13 @@ if ( $_SERVER["SCRIPT_FILENAME"] == __FILE__ ){
 }
 include_once "$racine/modele/authentification.inc.php";
 
-
+$msg="";
 // recuperation des donnees GET, POST, et SESSION
 if (!isset($_POST["mailU"]) || !isset($_POST["mdpU"])){
     // on affiche le formulaire de connexion
     $titre = "authentification";
     include "$racine/vue/entete.html.php";
-    include "$racine/vue/authentification.html";
+    include "$racine/vue/vueAuthentification.html.php";
     include "$racine/vue/pied.html.php";
 }
 else
@@ -27,9 +27,11 @@ else
     else{
         // l'utilisateur n'est pas connecté, on affiche le formulaire de connexion
         $titre = "authentification";
+        $msg="L'adresse email ou le mot de passe est invalide";
         include "$racine/vue/entete.html.php";
-        include "$racine/vue/vueAuthentification.php";
+        include "$racine/vue/vueAuthentification.html.php";
         include "$racine/vue/pied.html.php";
+        
     }
 }
 
