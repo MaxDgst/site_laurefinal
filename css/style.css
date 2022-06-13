@@ -23,7 +23,7 @@
 }
 
 .dark-mode {
-  --navbar-color: #6C3483;
+  --navbar-color: #ac57ce;
 }
 
 /* Navbar */
@@ -206,7 +206,7 @@
 
 /*Connexion*/
 .formulaire {
-  border: 1px solid #CD9900;
+  border: 1px solid #A9A9A9;
   border-radius: 3px;
   padding:10px;
 }
@@ -215,7 +215,7 @@
   display:flex; 
   font-size:1.7rem;
   font-weight: 800;
-  color:#CD9900;
+  color:#A9A9A9;
 }
 
 .formulaire input[type="text"]{
@@ -320,17 +320,17 @@
 
 .formulaire h2{
   font-size: 1.1rem;
-  color: #CD9900;
+  color: #A9A9A9;
 }
 
 .formulaire a{
-  color:#6C3483;
+  color:#ac57ce;
   text-decoration: underline;
 }
 
 .conf {
   display: flex;
-  border: 1px solid #CD9900;
+  border: 1px solid #A9A9A9;
   border-radius: 3px;
   padding:10px;
 }
@@ -339,16 +339,16 @@
   display:flex; 
   font-size:1.7rem;
   font-weight: 800;
-  color:#CD9900;
+  color:#A9A9A9;
 }
 
 .conf a{
-  color:#6C3483;
+  color:#ac57ce;
   text-decoration: underline;
 }
 
 .profil {
-  border: 1px solid #CD9900;
+  border: 1px solid #A9A9A9;
   border-radius: 3px;
   padding:10px;
 }
@@ -357,11 +357,11 @@
   display:flex; 
   font-size:1.7rem;
   font-weight: 800;
-  color:#CD9900;
+  color:#A9A9A9;
 }
 
 .profil a{
-  color:#6C3483;
+  color:#ac57ce;
   text-decoration: underline;
 }
 
@@ -377,8 +377,8 @@
 .titre1 h1{
   display:flex; 
   font-size:2.5rem;
-  font-weight: 800;
-  color:#CD9900;
+  font-weight: 400;
+  color: #2c75ff ;
   align-items: center;
   text-align: center;
   justify-content: center;
@@ -391,11 +391,10 @@
 
 .photo1 img{
   display: flex;
-  margin: 0 auto;
-  border: 1px solid #6C3483;
-  border-radius: 3px;
-  text-align: center;
-  justify-content: center;
+  border: 1px solid #ac57ce;
+  border-radius: 50%;
+  text-align: left;
+  justify-content: left;
 }
 
 .paragrahe1{
@@ -405,7 +404,7 @@
 .paragrahe1 p{
   line-height: 2;
   font-size: 1.45rem;
-  text-align: center;
+  text-align: justify;
 }
 
 #section2accueil{
@@ -419,25 +418,27 @@
 .photo2 img{
   display: flex;
   margin: 0 auto;
-  border: 1px solid #6C3483;
+  border: 1px solid #ac57ce;
   border-radius: 3px;
   text-align: center;
   justify-content: center;
 }
 
 .paragraphe2{
-  margin-top: 20px;
+  line-height: 2;
+  font-size: 1.45rem;
+  text-align: left;
 }
 
 .paragraphe2 a{
-  color:#6C3483;
+  color: #A9A9A9;
   text-decoration: underline;
 }
 
 .paragraphe2 p{
   line-height: 2;
   font-size: 1.45rem;
-  text-align: center;
+  text-align: left;
 }
 
 /*Fin accueil*/
@@ -446,48 +447,51 @@
 .card {
   display: flex;
   margin-top: 30px;
+  border-bottom: 2px solid #ac57ce;
+  padding-bottom: 10px;
+}
 
+.photoCard{
+  text-align: right;
+  justify-content: right;
+  display: flex;
+  align-items: right;
 }
 
 .photoCard>img{
+  margin-left:20px;
   display:flex;
-  border: 2px solid #6C3483;
-  border-radius: 3px;
+  border: 2px solid #ac57ce;
+  border-radius: 50%;
+  justify-content: right;
+  text-align: right;
 }
 
 .descrCard{
-  width: 100%;
+  display:flex;
+  flex-direction: column;
 }
 
 .titreP{
-  display:flex;
-  align-items: top;
-  justify-content: center;
   font-size:1.5rem;
-  font-weight: 800;
-  color:#CD9900;
+  font-weight: 400;
+  color:#A9A9A9;
   text-decoration: underline overline;
   text-underline-position: under;
 }
 
 .presentationP{
-  display:flex;
-  margin-left: 10px;
-  margin-top: 10px;
+  margin-left: 20px;
+  margin-top: 20px;
   font-size: 1.2rem;
-  justify-content: center;
-  text-align: center;
 }
 
 .lienP{
-  display:flex;
-  margin-top: 40px;
+  margin-top: 25px;
   font-size: 1.2rem;
-  justify-content: center;
-  text-align: center;
   text-decoration: underline;
-  color:#6C3483;
-  margin-left:10px;
+  color:#ac57ce;
+  margin-left:20px;
 }
 /*Fin Partenaires*/
 
@@ -496,7 +500,7 @@
 .bandeauAvis {
   display: flex;
   margin-top: 30px;
-  border: 2px solid #6C3483;
+  border: 2px solid #ac57ce;
   border-radius: 3px;
 
 }
@@ -505,7 +509,7 @@
   display:flex;
   font-size:1.5rem;
   font-weight: 800;
-  border-right: 2px solid #6C3483;
+  border-right: 2px solid #ac57ce;
   align-items: center;
   justify-content: center;
   padding:10px;
@@ -517,7 +521,7 @@
   justify-content: center;
   font-size:1.5rem;
   font-weight: 800;
-  color:#CD9900;
+  color:#A9A9A9;
   padding:10px;
 }
 
@@ -542,14 +546,14 @@
   width: 300px;
   height: 50px;
   padding: 5px;
-  border-color: #6C3483;
+  border-color: #ac57ce;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .ajoutAvis a {
-  color:#6C3483;
+  color:#ac57ce;
 }
 
 .goCon{
@@ -558,7 +562,7 @@
   justify-content: center;
   font-size:1.3rem;
   font-weight: 800;
-  color:#CD9900;
+  color:#A9A9A9;
   padding:10px;
 }
 
@@ -572,7 +576,7 @@
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  border: 3px solid #6C3483;
+  border: 3px solid #ac57ce;
   border-radius: 3px;
 }
 

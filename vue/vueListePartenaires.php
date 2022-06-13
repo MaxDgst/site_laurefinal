@@ -1,5 +1,5 @@
 <div class="titre1">
-    <h1>Liste des partenaires</h1>
+    <h1>Mes partenaires</h1>
 </div>
 
 
@@ -10,11 +10,6 @@ for ($i = 0; $i < count($listePartenaires); $i++) {
     ?>
 
     <div class="card">
-        <div class="photoCard">
-            <?php if (count($lesPhotosP) > 0) { ?>
-                <img height ="200px" width="200px"src="photos/<?= $lesPhotosP[0]["cheminPP"] ?>" alt="photo des partenaires" />
-            <?php } ?>
-        </div>
         <div class="descrCard">
             <div class="titreP">
                 <?php echo $listePartenaires[$i]['nomPartenaire']; ?> 
@@ -26,13 +21,15 @@ for ($i = 0; $i < count($listePartenaires); $i++) {
                 <?php {  ?>
                     <a href="<?=$listePartenaires[$i]['lienPartenaire'] ?>">
                 <?php } ?>
-            <div class="lienP">
                 <?php echo $listePartenaires[$i]['lienPartenaire']; ?>
                 </a>
- 
             </div>
-            </div>     
-        </div>
+        </div> 
+        <div class="photoCard">
+                <?php if (count($lesPhotosP) > 0) { ?>
+                    <img height ="200px" width="200px"src="photos/<?= $lesPhotosP[0]["cheminPP"] ?>" alt="photo des partenaires" />
+                <?php } ?>
+        </div>    
     </div>
 
 
