@@ -34,5 +34,5 @@ for ($i = 0; $i < count($listeAvis); $i++) {
 ?>
 
 <div class="ajoutAvis">
-    <button type="button"><a href="./?action=ajoutAvis">Laissez-moi un avis !</button></br>
+    <button type="button"><a href="./?action=ajoutAvis">Laissez-moi un avis !</a></button></br>
 </div>
