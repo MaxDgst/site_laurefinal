@@ -7,7 +7,7 @@ function getArticle() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from article WHERE cheminArticle is not NULL ");
+        $req = $cnx->prepare("select * from Article WHERE cheminArticle is not NULL ");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
@@ -27,7 +27,7 @@ function getLienArticle() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from article WHERE lienArticle is not NULL ");
+        $req = $cnx->prepare("select * from Article WHERE lienArticle is not NULL ");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
@@ -47,7 +47,7 @@ function getPodcast() {
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from podcast ");
+        $req = $cnx->prepare("select * from Podcast ");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
