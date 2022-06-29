@@ -19,7 +19,7 @@ for ($i = 0; $i < count($listePartenaires); $i++) {
             </div>
             <div class="lienP">
                 <?php {  ?>
-                    <a href="<?=$listePartenaires[$i]['lienPartenaire'] ?>">
+                    <a href="<?php echo $listePartenaires[$i]['lienPartenaire'] ?>">
                 <?php } ?>
                 <?php echo $listePartenaires[$i]['lienPartenaire']; ?>
                 </a>
@@ -27,7 +27,7 @@ for ($i = 0; $i < count($listePartenaires); $i++) {
         </div> 
         <div class="photoCard">
                 <?php if (count($lesPhotosP) > 0) { ?>
-                    <img height ="200px" width="200px"src="photos/<?= $lesPhotosP[0]["cheminPP"] ?>" alt="photo des partenaires" />
+                <img height ="200px" width="200px"src="photos/<?php echo $lesPhotosP[0]["cheminPP"] ?>" alt="photo des partenaires" />
                 <?php } ?>
         </div>    
     </div>

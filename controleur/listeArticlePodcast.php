@@ -7,8 +7,8 @@ include_once "$racine/modele/bd.articlePodcast.inc.php";
 ;
 
 // appel des fonctions permettant de recuperer les donnees utiles a l'affichage 
-$listeArticle = getArticle();
-$listeLienArticle = getLienArticle();
+$listeArticlesPdf = getArticlesPdf();
+$listeArticlesLien = getArticlesLien();
 $listePodcast = getPodcast();
 
 // traitement si necessaire des donnees recuperees

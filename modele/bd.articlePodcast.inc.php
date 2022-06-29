@@ -2,12 +2,12 @@
 
 include_once "bd.inc.php";
 
-function getArticle() {
+function getArticlesPdf() {
     $resultat = array();
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from Article WHERE cheminArticle is not NULL ");
+        $req = $cnx->prepare("select * from ArticlePdf");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);
@@ -22,12 +22,12 @@ function getArticle() {
     return $resultat;
 }
 
-function getLienArticle() {
+function getArticlesLien() {
     $resultat = array();
 
     try {
         $cnx = connexionPDO();
-        $req = $cnx->prepare("select * from Article WHERE lienArticle is not NULL ");
+        $req = $cnx->prepare("select * from ArticleLien");
         $req->execute();
 
         $ligne = $req->fetch(PDO::FETCH_ASSOC);

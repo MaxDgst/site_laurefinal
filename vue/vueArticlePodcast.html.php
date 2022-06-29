@@ -4,26 +4,26 @@
 
 
 <?php
-for ($i = 0; $i < count($listeArticle); $i++) {
+for ($i = 0; $i < count($listeArticlesPdf); $i++) {
 
-    $lesArticle = getArticle($listeArticle[$i]['idArticle']);
-    $lesLienArticle = getLienArticle($listeLienArticle[$i]['idArticle']);
+    $lesArticlesPdf = getArticlesPdf($listeArticlesPdf[$i]['idArticle']);
+    $lesArticlesLien = getArticlesLien($listeArticlesLien[$i]['idArticle']);
     ?>
 
     <div class="article">
         <div class="pdf">
-            <?php if (count($lesArticle) > 0) { ?>
-                <?php echo $listeArticle[$i]['nomArticle']; ?> 
-                <embed src="articles/<?= $lesArticle[0]["cheminArticle"] ?>" type='application/pdf' />
+            <?php if (count($lesArticlesPdf) > 0) { ?>
+                <?php echo $listeArticlesPdf[$i]['nomArticle']; ?> 
+                <embed src="articles/<?php echo $lesArticlesPdf[0]["cheminArticle"] ?>" type='application/pdf' />
             <?php } ?>
         </div>
-        <?php if (count($lesLienArticle) > 0) { ?>
-            <?php echo $listelienArticle[$i]['nomArticle']; ?> 
+        <?php if (count($lesArticlesLien) > 0) { ?>
+            <?php echo $listeArticlesLien[$i]['nomArticle']; ?> 
             <div class="lienP">
-                <a href="<?=$listeLienArticle[$i]['lienArticle'] ?>" ?>
+                <a href="<?php echo $listeArticlesLien[$i]['lienArticle'] ?>" ?>
             </div>
         <div class="lienP">
-            <?php echo $listeLienArticle[$i]['lienArticle']; ?>
+            <?php echo $listeArticlesLien[$i]['lienArticle']; ?>
         </a>     
         </div>
         <?php } ?>

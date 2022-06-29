@@ -14,7 +14,7 @@ for ($i = 0; $i < count($listePrestations); $i++) {
         </div>
         <div class="photoCard">
             <?php if (count($lesPhotosPrestations) > 0) { ?>
-                <img height ="200px" width="200px"src="photos/<?= $lesPhotosPrestations[0]["cheminPPr"] ?>" alt="photo des prestations" />
+                <img height ="200px" width="200px"src="photos/<?php echo $lesPhotosPrestations[0]["cheminPPr"] ?>" alt="photo des prestations" />
             <?php } ?>
         </div>    
     </div>

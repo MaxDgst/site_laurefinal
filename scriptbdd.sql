@@ -38,10 +38,16 @@ CREATE TABLE PhotoP(
    FOREIGN KEY(idPartenaire) REFERENCES Partenaires(idPartenaire)
 );
 
-CREATE TABLE Article(
+CREATE TABLE ArticlePdf(
    idArticle INT,
    nomArticle VARCHAR(100),
    cheminArticle VARCHAR(60),
+   PRIMARY KEY(idArticle)
+);
+
+CREATE TABLE ArticleLien(
+   idArticle INT,
+   nomArticle VARCHAR(100),
    lienArticle VARCHAR(60),
    PRIMARY KEY(idArticle)
 );
@@ -49,7 +55,7 @@ CREATE TABLE Article(
 CREATE TABLE Podcast(
    idPodcast INT,
    nomPodcast VARCHAR(100),
-   cheminPodcast VARCHAR(60),
+   lienPodcast VARCHAR(60),
    PRIMARY KEY(idPodcast)
 );
 
@@ -99,9 +105,10 @@ Un moment de lâcher prise pour pouvoir récupérer des heures de sommeil en tou
 sérénité.
 Les horaires sont modifiables en fonction de vos besoins.");
 
-INSERT INTO Article VALUES (1,"La motricité", "laMotricite.pdf", NULL);
-INSERT INTO Article VALUES (2,"Quels livres proposer aux jeunes enfants ?", NULL, "https://blog.berceaumagique.com/livres-jeunes-enfants/%22");
-INSERT INTO Article VALUES (3,"Séparation et retrouvailles", NULL, "https://blog.berceaumagique.com/separations-et-retrouvailles/");
+INSERT INTO ArticlePdf VALUES (1,"La motricité", "laMotricite.pdf");
+
+INSERT INTO ArticleLien VALUES (2,"Quels livres proposer aux jeunes enfants ?", "https://blog.berceaumagique.com/livres-jeunes-enfants/%22");
+INSERT INTO ArticleLien VALUES (3,"Séparation et retrouvailles", "https://blog.berceaumagique.com/separations-et-retrouvailles/");
 
 
 INSERT INTO Partenaires VALUES (1, "Nature Safe", "Nature Safe marque de cosmétiques bio fabriqué à Lyon n’hésitez pas à aller voir son site.", "https://www.naturesafe-shop.com");
@@ -151,4 +158,3 @@ INSERT INTO Critiques VALUES (7, 8, "super", "makkssou");
 INSERT INTO Critiques VALUES (8, 8, "super", "makkssou");
 INSERT INTO Critiques VALUES (9, 8, "super", "makkssou");
 
-INSERT INTO Podcast VALUES (1,"Nom" "https://www.youtube.com/");
